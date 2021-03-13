@@ -1,0 +1,247 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>24 Hours Italian Restaurant</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/zerogrid.css' %}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" type="text/css" media="screen">
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+    <script src="{% static 'js/superfish.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/sForm.js' %}"></script>
+    <script src="{% static 'js/jquery.carouFredSel-6.1.0-packed.js' %}"></script>
+    <script src="{% static 'js/tms-0.4.1.js' %}"></script>
+    <script src="{% static 'js/css3-mediaqueries.js' %}"></script>
+    <script>
+      $(window).load(function(){
+      $('.slider')._TMS({
+              show:0,
+              pauseOnHover:false,
+              prevBu:'.prev',
+              nextBu:'.next',
+              playBu:false,
+              duration:800,
+              preset:'fade',
+              pagination:true,//'.pagination',true,'<ul></ul>'
+              pagNums:false,
+              slideshow:8000,
+              numStatus:false,
+              banners:false,
+          waitBannerAnimation:false,
+        progressBar:false
+      })
+      });
+
+     $(window).load (
+    function(){$('.carousel1').carouFredSel({auto: false,prev: '.prev',next: '.next', width: 960, items: {
+      visible : {min: 1,
+       max: 4
+},
+height: 'auto',
+ width: 240,
+
+    }, responsive: false,
+
+    scroll: 1,
+
+    mousewheel: false,
+
+    swipe: {onMouse: false, onTouch: false}});
+
+
+    });
+
+
+
+
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+<header>
+    {% include 'restapp/header.html' %}
+</header>
+
+<!--=======slider================================-->
+
+<div class="main">
+    <div class="slider-relative">
+        <div class="slider-block">
+            <div class="slider">
+                <ul class="items">
+                    <li><img src="{% static 'img/slide.jpg' %}" alt=""></li>
+                    <li><img src="{% static 'img/slide1.jpg' %}" alt=""></li>
+                    <li class="mb0"><img src="{% static 'img/slide2.jpg' %}" alt=""></li>
+                </ul>
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+
+                <button class="btn btn-primary pos new-btn"><strong>Timings</strong></button>
+                <button class="btn btn-primary pos new-btn"><strong>Order Online</strong></button>
+                <button class="btn btn-primary pos new-btn"><strong>View Menu</strong></button>
+            </div>
+        </div>
+    </div>
+    <!--=======content================================-->
+
+    <div class="content page1">
+        <div class="zerogrid">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h2>Dine@Home Menu</h2>
+                    <div><img class="img-thumbnail bx" src="{% static 'img/page1_img1.jpg' %}" style="height: 200px;"
+                              alt="RecipeImage">
+                        <div class="col1 upp"><a href="#">kim Lorem ipsum doamet consectet</a></div>
+                        <span>Enjoyhe comfort of your own sofa with our our delicious Dine@Home menu. Plus, get 20% off your total bill when you order via Click & Collect!</span>
+                        <div class="price">45$</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h2>Keeping You Safe</h2>
+                    <div><img class="img-thumbnail bx" src="{% static 'img/page1_img1.jpg' %}" style="height: 200px;" alt="RecipeImage">
+                        <div class="col1 upp"><a href="#">kim Lorem ipsum doamet consectet</a></div>
+                        <span>We’re proud to b our customers and teams safe is our number one priority. Click below for more details.</span>
+                        <div class="price">45$</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-full">
+                <div class="hor_separator"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h2>Health Hub</h2>
+                    <div><img class="img-thumbnail bx" src="{% static 'img/page1_img1.jpg' %}" style="height: 200px;"
+                              alt="RecipeImage">
+                        <div class="col1 upp"><a href="#">kim Lorem ipsum doamet consectet</a></div>
+                        <span>We all want to . So whether you’re vegan, vegetarian, flexitarian or gluten free, we are committed to making sure you have all the information you need.</span>
+                        <div class="price">45$</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h2>Mother's Day Special</h2>
+                    <div><img class="img-thumbnail bx" src="{% static 'img/page1_img1.jpg' %}" style="height: 200px;"
+                               alt="RecipeImage">
+
+                        <div class="col1 upp"><a href="#">kim Lorem ipsum doamet consectet</a></div>
+                        <span>Dine at home with us  with amazing bundle deals for everyone and a new special - creamy King Prawn & Pancetta Spaghetti! Available Friday 12th - Sunday 14th March.</span>
+                        <div class="price">45$</div>
+                    </div>
+                </div>
+            </div>
+            <!--  <div class="col-md-6">
+                  <div class="wrap-col">
+                      <h2>Dine@Home Menu</h2>
+                      <div class="page1_block col1">
+                          <div class="col-md-12"><img src="{% static 'img/welcome_img.jpg' %}" alt=""></div>
+                          <div class="col-md-12">
+                              <div class="extra_wrapper">
+                                  <p><span class="col2"><a
+                                          href="http://blog.templatemonster.com/free-website-templates/"
+                                          rel="nofollow">Click here</a></span> for more info about this free website
+                                      template created by TemplateMonster.com </p>
+                                  Aenean nonummy hendrerit mau rellus porta. Fusce suscipit varius m sociis natoque
+                                  penaibet magni parturient montes nasetur ridiculumula dui. <br>
+                                  <a href="#" class="btn btn-primary">more</a>
+                              </div>
+                          </div>
+                          <div class="clear"></div>
+                      </div>
+                  </div>
+              </div>   -->
+            <!-- <div class="col-md-6">
+                 <div class="wrap-col">
+                     <h2>Features</h2>
+                     <ul class="list">
+                         <li><a href="#">Unlimited consultations and/or planning</a></li>
+                         <li><a href="#">Expert advice on traditions, customs, aetiquette</a></li>
+                         <li><a href="#">Determine and stay within budget</a></li>
+                         <li><a href="#">Choosing the right Wedding Venue</a></li>
+                         <li><a href="#">Provide preferred vendor's list</a></li>
+                         <li><a href="#">Assist with wedding scheme and design</a></li>
+                     </ul>
+                 </div>
+             </div>-->
+
+            <div class="col-full">
+                <div class="hor_separator"></div>
+            </div>
+            <div class="row">
+                <div class="col-full">
+                    <div class="wrap-col">
+                        <div class="car_wrap">
+                            <h2>Best Choice</h2>
+                            <a href="#" class="prev"></a><a href="#" class="next"></a>
+                            <ul class="carousel1">
+                                <li>
+                                    <div><img src="{% static 'img/page1_img1.jpg' %}" alt="">
+                                        <div class="col1 upp"><a href="#">kim Lorem ipsum doamet consectet</a></div>
+                                        <span> Dorem ipsum dolor amet consectetur</span>
+                                        <div class="price">45$</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div><img src="{% static 'img/page1_img2.jpg' %}" alt="">
+                                        <div class="col1 upp"><a href="#">Lorem ipsum doamet consectet</a></div>
+                                        <span> Dorem ipsum dolor amet consectetur</span>
+                                        <div class="price">45$</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div><img src="{% static 'img/page1_img3.jpg' %}" alt="">
+                                        <div class="col1 upp"><a href="#">Lorem ipsum doamet consectet</a></div>
+                                        <span> Dorem ipsum dolor amet consectetur</span>
+                                        <div class="price">45$</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div><img src="{% static 'img/page1_img4.jpg' %}" alt="">
+                                        <div class="col1 upp"><a href="#">Lorem ipsum doamet consectet</a></div>
+                                        <span> Dorem ipsum dolor amet consectetur</span>
+                                        <div class="price">45$</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div><img src="{% static 'img/page1_img3.jpg' %}" alt="">
+                                        <div class="col1 upp"><a href="#">Lorem ipsum doamet consectet kim</a></div>
+                                        <span> Dorem ipsum dolor amet consectetur</span>
+                                        <div class="price">45$</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    {% include 'restapp/footer.html' %}
+    <div class="text-center">
+        All Rights Registered by @HeArt Designers
+    </div>
+</footer>
+
+</body>
+</html>

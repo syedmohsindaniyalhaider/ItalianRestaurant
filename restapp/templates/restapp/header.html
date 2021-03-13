@@ -1,0 +1,29 @@
+{% load static %}
+
+<div class="zerogrid">
+        <div class="col-full">
+            <div class="wrap-col">
+                <h1><a href="{% url 'restapp:index' %}"><img src="{% static 'img/logo.png' %}" alt="EXTERIOR"></a></h1>
+
+                <div class="menu_block">
+                    <nav>
+                        <ul class="sf-menu">
+                            <li class="current"><a href="{% url 'restapp:home' %}">Home</a></li>
+                            <!--<li class="with_ul"><a href="#">About Us</a>
+                                <ul>
+                                    <li><a href="#"> cuisine</a></li>
+                                    <li><a href="#">Good rest</a></li>
+                                    <li><a href="#">Services</a></li>
+                                </ul>
+                            </li>-->
+                            <li><a href="{% url 'restapp:menu' %}">Menu & Pricing</a></li>
+                            <li><a href="{% url 'restapp:about' %}">About</a></li>
+                            <li><a href="{% url 'restapp:contact' %}">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>

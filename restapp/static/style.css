@@ -1,0 +1,51 @@
+.new-btn{
+    border-radius: 0px !important;
+    width: 250px !important;
+    height: 50px;
+    background: #79302b !important;
+    border: none !important;
+}
+.new-btn:hover{
+    background: #79202b !important;
+}
+.pos{
+    z-index: 999;
+    position: relative;
+    top: -100;
+}
+li.current > a{
+    background: none !important;
+}
+.sf-menu > li > a{
+    color: #79302b !important;
+}
+ul.sf-menu > li :hover{
+    background: none !important;
+}
+.sf-menu > li > a{
+    color: #0b0a08
+}
+img{
+    border: 1px solid #e6e4e4 !important;
+}
+.bx{
+    box-shadow: 2px 2px 3px #ddd;
+    border: 1px solid #e6e4e4;
+}
+.footer-heading{
+    font-family: Times New Roman;
+    font-size: 20px;
+}
+
+a.btn{
+     color: white !important;
+     background: #79302b !important;
+}
+
+a.btn:hover{
+    background: #79202b !important;
+}
+
+#newsletter input{
+    height: 37px !important;
+}
